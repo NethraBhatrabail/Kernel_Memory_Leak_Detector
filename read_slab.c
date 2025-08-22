@@ -1,7 +1,6 @@
-#include <stdio.h>     // For input/output operations like printf, fopen, fgets, etc.
-#include <stdlib.h>    // For general utilities like exit status codes
-#include <string.h>    // For string handling (not used explicitly here but included by habit)
-
+#include <stdio.h>     
+#include <stdlib.h>   
+#include <string.h>    
 int main() {
     // Open the file /proc/slabinfo in read mode. This file contains kernel slab allocator info.
     FILE *file = fopen("/proc/slabinfo", "r");
