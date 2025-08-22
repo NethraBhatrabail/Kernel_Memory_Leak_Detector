@@ -13,3 +13,13 @@
 * CLI interface for logging, analyzing, and viewing results
 * ASCII-based text graph visualization with thresholds
 * Includes basic test cases for verification
+
+Implimentation details:
+* read_slab.c will be first C program to read and print slab cache info.
+* read_vmstat.c contains program which is used to monitor virtual memory statistics such as page faults, free pages, and page steals, which helps in understanding overall memory behavior along with slab usage.
+* slab_log.c will read /proc/slabinfo, Log the following to a file: timestamp, cache name, active, total and save it in a .csv format (easy to view later)
+* analyze_growth.c will read the slab_log.csv file, compare entries over time, detect caches where Active objects keep growing and print those as suspected memory leaks.
+* main_cli.c will displays a simple menu and based on the user's choice: Log Slab Info, Show Logged Slab Info, Analyze Growth,Show Growth Graph, Exit
+* test_all.c  is Functional Testing (also called Unit-style testing for system components)
+
+
