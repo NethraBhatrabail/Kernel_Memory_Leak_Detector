@@ -1,4 +1,4 @@
-# Kernel_Memory_Leak_Detector (User-Space C Implementation)
+# Kernel Memory Leak Detector in User Space
 
 📌 Overview
 * This project is a Kernel Memory Leak Detector implemented in C from user space.
